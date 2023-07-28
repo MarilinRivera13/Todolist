@@ -1,38 +1,39 @@
+/* App.css */
+
 .App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
   text-align: center;
+  color: #6a1b9a; /* Morado */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-text {
+  flex: 1;
+  margin-left: 10px;
+  color: #333; /* Color de texto predeterminado */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-text.completed {
+  text-decoration: line-through;
+}
+
+.todo-delete-icon {
+  cursor: pointer;
+  color: #6a1b9a; /* Morado */
+}
+
+.todo-input {
+  width: 100%;
+  margin-bottom: 10px;
 }
